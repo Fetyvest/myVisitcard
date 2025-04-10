@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    /* border: solid 1px lime !important; */
+}
+
+:root {
+    --fontEN: "Poppins", sans-serif;
+    --fontRU: "Nunito Sans", sans-serif;
+    --BGColor: #000004;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+.container {
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    font-family: var(--fontEN);
+    font-size: 25px;
+    font-weight: 600;
+    width: 170px;
+    transition: all 0.5s;
+}
+
+.logo:hover {
+    color: lightblue;
+}
+
+.logo img {
+    width: 50px;
+    border-radius: 100%;
+}
+
+@media(max-width: 650px) {
+    .a:hover {
+        color: inherit;
+    }
+    .logo:hover {
+        color: inherit;
+    }
+    .a:active {
+        color: lightblue;
+    }
+    .logo:active {
+        color: lightblue;
+    }
+}
