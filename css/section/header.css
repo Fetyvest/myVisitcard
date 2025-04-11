@@ -1,6 +1,9 @@
 .header {
     background-color: var(--BGColor);
     height: 75px;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
 }
 
 .header__content {
@@ -43,6 +46,20 @@
 
     .header .logo {
         width: 50px;
-        /* display: block; */
+    }
+}
+
+@media(max-width: 650px) {
+    .a:hover {
+        color: white;
+    }
+    .logo:hover {
+        color: white;
+    }
+    .a:active {
+        color: lightblue;
+    }
+    .logo:active {
+        color: lightblue;
     }
 }

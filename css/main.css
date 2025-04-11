@@ -2,3 +2,7 @@
 @import url(basic.css);
 @import url(section/header.css);
 @import url(section/grettings.css);
+@import url(section/separator.css);
+@import url(section/about.css);
+@import url(section/skillbars.css);
+@import url(section/project.css);

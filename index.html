@@ -13,15 +13,15 @@
                 <div class="header__content">
                     <a href="#" class="logo-url">
                         <div class="logo">
-                            <img src="img/basic/logo.jpg" alt="лого">
+                            <img src="img/basic/logo.jpg" alt="Лого">
                             <div class="logo-text">Fetyvest</div>
                         </div>
                     </a>
                     <nav class="header__nav">
                         <ul class="header__list">
-                            <li class="header__item"><a href="#" class="header__url">Обо мне</a></li>
-                            <li class="header__item"><a href="#" class="header__url">Мои сайты</a></li>
-                            <li class="header__item"><a href="#" class="header__url">Спасибо</a></li>
+                            <li class="header__item"><a href="#about" class="header__url">Обо мне</a></li>
+                            <li class="header__item"><a href="#skillbars" class="header__url">Скиллбары</a></li>
+                            <li class="header__item"><a href="#project" class="header__url">Мои проекты</a></li>
                             <li class="header__item"><a href="#" class="header__url">Контакты</a></li>
                         </ul>
                     </nav>
@@ -34,13 +34,115 @@
                 <div class="grettings__content">
                     <div class="grettings__text">
                         <div class="grettings__title">Привет!</div>
-                        <div class="grettings__desc">Это моя сайт визитка! Я сделал её сам!</div>
+                        <div class="grettings__desc">Это мой сайт-визитка! Я сделал его сам!</div>
                     </div>
                     <button class="grettings__btn">Подробнее</button>
                 </div>
             </div>
         </section>
 
+        <section class="separator">
+            <div class="container">
+                <div class="separator__content">
+                    <div class="separator__text">
+                        Это просто разделитель. Не обращайте внимания
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="about__content">
+                    <div class="about__title" id="about">Обо мне</div>
+                    <div class="about__info">
+                        <img src="img/about/about-img.jpeg" alt="Мое фото" class="about__pic">
+                        <div class="about__text">
+                            <p>Я – Андрей Fetyvest – начинающий веб-разработчик, ориентированный на fullstack. Этот сайт – моё портфолио в процессе создания. Сейчас в моём арсенале – HTML и CSS (вёрстка и стилизация). В планах – JavaScript (интерактив и динамика) и PHP (серверная разработка и базы данных).</p>
+                            <p>Мои текущие навыки (см. шкалы ниже) основаны на изучении курсов и личной практике. Стремлюсь к постоянному росту и освоению новых веб-технологий. Цель – создавать крутые, функциональные и красивые сайты.</p>
+                            <p>В свободное время увлекаюсь компьютерными играми. Особенно выделяю Minecraft, в котором достиг значительных успехов, включая хардкорное прохождение и получение всех достижений. Также интересуюсь играми Mindustry и Terraria. Несмотря на увлечение играми, веб-разработка остаётся для меня приоритетным направлением развития.</p>
+                            <p>Связаться со мной можно через раздел "Контакты" на сайте. Буду рад общению и предложениям о сотрудничестве в сфере веб-разработки. Веб-мир, я иду!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skillbars">
+            <div class="container">
+                <div class="skillbars__content">
+                    <div class="skillbars__main-title" id="skillbars">Скиллбары</div>
+                    <div class="skillbars__block">
+                        <div class="skillbars__bar skillbars__bar1">
+                            <div class="skillbars__title skillbars__title1">HTML и CSS</div>
+                            <div class="skillbars__info skillbars__info1">
+                                <div class="skillbars__offline skillbars__offline1"><div class="skillbars__line skillbars__line1"></div></div>
+                                <img src="img/skillbars/html and css logo.png" alt="HTML и CSS">
+                                <div class="skillbars__percent skillbars__percent1">83%</div>
+                            </div>
+                        </div>
+                        <div class="skillbars__bar skillbars__bar2">
+                            <div class="skillbars__title skillbars__title2">JavaScript</div>
+                            <div class="skillbars__info skillbars__info2">
+                                <div class="skillbars__offline skillbars__offline2"><div class="skillbars__line skillbars__line2"></div></div>
+                                <img src="img/skillbars/js logo.png" alt="JavaScript">
+                                <div class="skillbars__percent skillbars__percent2">0%</div>
+                            </div>
+                        </div>
+                        <div class="skillbars__bar skillbars__bar3">
+                            <div class="skillbars__title skillbars__title3">PHP</div>
+                            <div class="skillbars__info skillbars__info3">
+                                <div class="skillbars__offline skillbars__offline3"><div class="skillbars__line skillbars__line3"></div></div>
+                                <img src="img/skillbars/php logo.png" alt="PHP">
+                                <div class="skillbars__percent skillbars__percent3">0%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project">
+            <div class="container">
+                <div class="project__content">
+                    <div id="project">Мои проекты</div>
+                    <div class="project__block">
+                        <a href="https://fetyvest.github.io/spoon/" class="project__url">
+                            <div class="project__card">
+                                <img src="img/project/spoon.png" alt="Скрин сайта" class="project__screen">
+                                <div class="project__title">Spoon Site</div>
+                                <div class="project__desc">
+                                    Это тренеровочный сайт, который я сделал во время обучения
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="project__url">
+                            <div class="project__card">
+                                <img src="img/project/visitcard.png" alt="Скрин сайта" class="project__screen">
+                                <div class="project__title">Мой сайт-визитка</div>
+                                <div class="project__desc">
+                                    Это сайт визитка, который я сделал по своему дизайну. Кстати, вы сейчас на нём находитесь
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="project__url">
+                            <div class="project__card">
+                                <!-- <img src="" alt="Скрин сайта" class="project__screen"> -->
+                                <div class="project__substitute"></div>
+                                <div class="project__title">Скоро</div>
+                                <div class="project__desc">Возможно
+                        
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="https://github.com/Fetyvest" class="project__main-url">Больше мелких проектов</a>
+                </div>
+            </div>
+        </section>
+
     </div>
+    <!-- <br><br><br><br><br> -->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>

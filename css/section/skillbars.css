@@ -1,0 +1,152 @@
+.skillbars {
+    margin-top: 50px;
+}
+
+#skillbars {
+    scroll-margin-top: 75px;
+}
+
+/* .skillbars__content {
+} */
+
+.skillbars__main-title{
+    font-family: var(--fontRU);
+    font-size: clamp(0.625rem, 0.526rem + 3.158vi, 2.5rem);
+    font-weight: 800;
+}
+
+.skillbars__block {
+    display: flex;
+    flex-direction: column;
+    row-gap: calc(5px + 0.5vw);
+}
+
+.skillbars__bar {
+    max-width: 1260px; 
+    height: calc(50px + 6vw);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+}
+
+/* .skillbars__bar1 {
+} */
+
+.skillbars__title {
+    font-family: var(--fontEN);
+    font-size: clamp(0.625rem, 0.576rem + 1.579vi, 1.563rem);
+    font-weight: 500;
+}
+
+/* .skillbars__title1 {
+} */
+
+.skillbars__line {
+    font-family: var(--fontEN);
+}
+
+.skillbars__info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+/* .skillbars__info {
+} */
+
+/* .skillbars__info1 {
+} */
+
+.skillbars__offline {
+    width: 90%;
+    height: 100%;
+    background-color: #cccccc;
+    border-radius: 50px;
+    border: calc(3px + 0.4vw) solid #cccccc;
+}
+
+.skillbars__line {
+    width: 0;
+    border-radius: 50px;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.1s;
+}
+
+.skillbars__line:hover {
+    border: #000000 2px solid;
+}
+
+.skillbars__line1 {
+    background: linear-gradient(90deg,rgba(235, 78, 25, 1) 0%, rgba(248, 101, 31, 1) 30%, rgba(0, 169, 220, 1) 70%, rgba(3, 114, 183, 1) 100%);
+    width: 83%;
+}
+
+
+.skillbars img {
+    width: calc(10px + 3vw);
+}
+
+.skillbars__percent {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    height: calc(10px + 3vw);
+    font-family: var(--fontEN);
+    font-size: clamp(0.25rem, 0.211rem + 1.263vi, 1rem);
+}
+
+/* .skillbars__percent1 {
+} */
+
+/* .skillbars__bar2 {
+} */
+
+/* .skillbars__title2 {
+} */
+
+/* .skillbars__info2 {
+} */
+
+.skillbars__line2 {
+    width: 0%;
+    background: linear-gradient(90deg,rgba(239, 216, 29, 1) 0%, rgba(236, 207, 25, 1) 25%, rgba(231, 188, 18, 1) 75%, rgba(228, 179, 15, 1) 100%);
+}
+
+/* .skillbars__percent2 {
+} */
+
+/* .skillbars__bar3 {
+} */
+
+/* .skillbars__title3 {
+} */
+
+/* .skillbars__info {
+} */
+
+.skillbars__line3 {
+    background: linear-gradient(90deg,rgba(123, 127, 181, 1) 0%, rgba(112, 116, 171, 1) 25%, rgba(89, 93, 151, 1) 75%, rgba(78, 82, 141, 1) 100%);
+    width: 0%;
+}
+
+/* .skillbars__percent3 {
+} */
+
+@media(max-width: 650px) {
+    .skillbars__line:hover {
+        border: 0;
+    }
+
+    .skillbars__line:active {
+        border: #000000 1px solid;
+    }
+    .skillbars__line {
+        transition: all 0;
+    }
+}

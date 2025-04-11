@@ -1,0 +1,113 @@
+.project {
+    margin-top: 100px;
+}
+
+.project__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 30px;
+}
+
+#project{
+    scroll-margin-top: 75px;
+    font-size: clamp(1rem, 0.921rem + 2.526vi, 2.5rem);
+    font-weight: 700;
+    font-family: var(--fontRU);
+    text-align: left;
+    width: 100%;
+}
+
+.project__block {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+}
+
+.project__url {
+    font-family: var(--fontRU);
+    color: black;
+    font-size: 20px;
+}
+
+.project__url:hover {
+    color: black;
+}
+
+.project__card {
+    width: 350px;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px darkgray;
+    background-color: #dddddd;
+    transition: all 0.5s;
+}
+
+.project__screen {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.project__substitute {
+    width: 100%;
+    height: 33%;
+    border-radius: 10px 10px 0 0;
+    background: linear-gradient(36deg,rgba(189, 0, 0, 1) 0%, rgba(255, 145, 0, 1) 50%, rgba(222, 192, 0, 1) 100%);
+    transition: all 0.5;
+}
+
+.project__card:hover {
+    transform: scale(1.05);
+}
+
+.project__title {
+    font-size: clamp(0.75rem, 0.707rem + 1.368vi, 1.563rem);
+    margin: 25px 0;
+}
+
+.project__desc {
+    padding: 10px;
+    font-size: clamp(0.5rem, 0.474rem + 0.842vi, 1rem);
+}
+
+.project__main-url {
+    font-family: var(--fontRU);
+    color: deepskyblue;
+    font-size: clamp(0.375rem, 0.329rem + 1.474vi, 1.25rem);
+    font-weight: 500;
+}
+
+.project__main-url:hover {
+    color: black;
+}
+
+@media(max-width: 1150px) {
+    .project__block {
+        flex-direction: column;
+        align-items: center;
+        row-gap: calc(5px + 3vh);
+    }
+
+    .project__card {
+        width: calc(30px + 70vw);
+        height: calc(150px + 60vw);
+    }
+
+    .project__card:hover {
+        transform: scale(1);
+    }
+
+    .project__card:active {
+        transform: scale(1.05);
+    }
+
+    .project__main-url:hover {
+        color: deepskyblue;
+    }
+
+    .project__main-url:active {
+        color: black;
+    }
+}
