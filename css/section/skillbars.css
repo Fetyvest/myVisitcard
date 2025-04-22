@@ -44,6 +44,11 @@
 /* .skillbars__title1 {
 } */
 
+.skillbars__title1 span {
+    font-family: var(--fontRU);
+    font-weight: 650;
+}
+
 .skillbars__line {
     font-family: var(--fontEN);
 }
@@ -126,6 +131,11 @@
 
 /* .skillbars__title3 {
 } */
+
+.skillbars__title3 span {
+    font-family: var(--fontRU);
+    font-weight: 650;
+}
 
 /* .skillbars__info {
 } */
