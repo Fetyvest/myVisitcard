@@ -1,6 +1,6 @@
 .separator {
     background-color: var(--BGColor);
-    height: 350px;
+    height: calc(15vw + 150px);
 }
 
 .separator__content {
@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .separator__text {
