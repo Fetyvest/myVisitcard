@@ -33,7 +33,9 @@
 
 .grettings__btn {
     width: calc(60px + 6vw);
+    max-width: 210px;
     height: calc(20px + 2vw);
+    max-height: 70px;
     background-color: white;
     color: black;
     border: 0px;
@@ -43,11 +45,13 @@
     font-size: clamp(0.25rem, 0.197rem + 1.684vi, 1.25rem);
     transition: all 0.5s;
     cursor: pointer;
+    box-shadow: 5px 5px 5px gray;
 }
 
 .grettings__btn:hover {
     background-color: black;
     color: white;
+    box-shadow: 5px 5px 3px #303030;
 }
 
 @media(max-width: 650px) {

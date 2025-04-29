@@ -49,7 +49,7 @@
     }
 }
 
-@media(max-width: 650px) {
+/* @media(max-width: 650px) {
     .a:hover {
         color: white;
     }
@@ -62,4 +62,4 @@
     .logo:active {
         color: lightblue;
     }
-}
+} */

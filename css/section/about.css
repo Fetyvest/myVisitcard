@@ -24,10 +24,12 @@
     width: 500px;
     border-radius: 5px;
     transition: all 0.1s;
+    box-shadow: 5px 5px 5px gray;
 }
 
 .about__pic:hover {
     border: black 2px solid;
+    border-radius: 10px;
 }
 
 .about__text {

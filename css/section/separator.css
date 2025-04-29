@@ -1,6 +1,7 @@
 .separator {
     background-color: var(--BGColor);
     height: calc(15vw + 150px);
+    max-height: 400px;
 }
 
 .separator__content {

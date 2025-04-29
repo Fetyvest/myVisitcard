@@ -57,6 +57,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     column-gap: 10px;
 }
 
@@ -72,6 +73,7 @@
     background-color: #cccccc;
     border-radius: 50px;
     border: calc(3px + 0.4vw) solid #cccccc;
+    box-shadow: 2px 2px 2px gray;
 }
 
 .skillbars__line {
@@ -158,5 +160,16 @@
     }
     .skillbars__line {
         transition: all 0;
+    }
+}
+
+@media(min-width: 2500px) {
+    .skillbars img {
+        max-height: 85px;
+        max-width: 85px;
+    }
+
+    .skillbars__percent {
+        height: 74px;
     }
 }

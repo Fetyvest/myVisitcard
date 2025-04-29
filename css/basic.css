@@ -11,14 +11,17 @@
     --BGColor: #000004;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     background-color: #eeeeee;
     overflow-x: hidden;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -64,14 +67,17 @@ a:hover {
 
 @media(max-width: 650px) {
     .a:hover {
-        color: inherit;
+        color: white;
     }
+
     .logo:hover {
-        color: inherit;
+        color: white;
     }
+
     .a:active {
         color: lightblue;
     }
+
     .logo:active {
         color: lightblue;
     }
