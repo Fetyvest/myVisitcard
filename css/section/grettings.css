@@ -57,7 +57,7 @@
 @media(max-width: 650px) {
     .grettings__btn:hover {
         background-color: white;
-        color: inherit;
+        color: black;
     }
     .grettings__btn:active {
         background-color: black;

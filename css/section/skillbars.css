@@ -90,7 +90,7 @@
 
 .skillbars__line1 {
     background: linear-gradient(90deg,rgba(235, 78, 25, 1) 0%, rgba(248, 101, 31, 1) 30%, rgba(0, 169, 220, 1) 70%, rgba(3, 114, 183, 1) 100%);
-    width: 86%;
+    width: 89%;
 }
 
 
@@ -171,5 +171,9 @@
 
     .skillbars__percent {
         height: 74px;
+    }
+
+    .skillbars__bar {
+        max-height: 150px;
     }
 }

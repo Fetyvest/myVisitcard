@@ -74,11 +74,11 @@
 
 @media(max-width: 650px) {
     a .footer__social:hover {
-        border-color: inherit;
+        border-color: white;
     }
 
     .logo:hover {
-        color: inherit;
+        color: white;
     }
 
     .a:active {

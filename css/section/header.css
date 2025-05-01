@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 /* .header__nav {
@@ -49,7 +50,7 @@
     }
 }
 
-/* @media(max-width: 650px) {
+@media(max-width: 650px) {
     .a:hover {
         color: white;
     }
@@ -62,4 +63,4 @@
     .logo:active {
         color: lightblue;
     }
-} */
+}

@@ -44,6 +44,45 @@ a:hover {
     padding: 0 10px;
 }
 
+.dot-anim {
+    width: 5px;
+    height: 5px;
+    background-color: darkblue;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    animation: header-dot 120s infinite;
+    animation-timing-function: easy-in-out;
+    transform: translate(50%, -50%);
+}
+
+@keyframes header-dot {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        left: 100%;
+        top: 0;
+    }
+
+    50% {
+        left: 100%;
+        top: 100%;
+    }
+
+    75% {
+        left: 0;
+        top: 100%;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
 .logo {
     display: flex;
     align-items: center;
