@@ -72,7 +72,7 @@
                                 достиг значительных успехов, включая хардкорное прохождение и получение всех достижений.
                                 Также интересуюсь играми Mindustry и Terraria. Несмотря на увлечение играми,
                                 веб-разработка остаётся для меня приоритетным направлением развития.</p>
-                            <p>Связаться со мной можно через раздел "Контакты" на сайте. Буду рад общению и предложениям
+                            <p>Связаться со мной можно через раздел "Контакты" внизу сайта. Буду рад общению и предложениям
                                 о сотрудничестве в сфере веб-разработки. Веб-мир, я иду!</p>
                         </div>
                     </div>
@@ -144,14 +144,12 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="project__url">
+                        <a href="https://fetyvest.github.io/LOTUS/" class="project__url">
                             <div class="project__card">
-                                <!-- <img src="" alt="Скрин сайта" class="project__screen"> -->
-                                <!-- Это временный градиент -->
-                                <div class="project__substitute"></div>
-                                <div class="project__title">Скоро</div>
-                                <div class="project__desc">Возможно
-
+                                <img src="img/project/LOTUS.png" alt="Скрин сайта" class="project__screen">
+                                <div class="project__title"><span>LOTUS</span></div>
+                                <div class="project__desc">
+                                    Реальный сайт, для реальной компании. Мой первый подобный опыт
                                 </div>
                             </div>
                         </a>
@@ -173,12 +171,13 @@
                     <div class="footer__nav">
                         <ul class="footer__list">
                             <div class="footer__column">
-                                <li class="footer__item"><a href="#">Не нажимать</a></li>
+                                <li class="footer__item"><a href="#" id="openVideoModalLink">Не нажимать</a></li>
                                 <li class="footer__item"><a href="#">​</a></li>
                             </div>
                             <div class="footer__column">
                                 <li class="footer__item"><a href="#">​</a></li>
-                                <li class="footer__item"><a href="#">Top secret</a></li> <!-- Этот объект пока не готов -->
+                                <li class="footer__item"><a href="#">​</a></li>
+                                <!-- <li class="footer__item"><a href="#">Top secret</a></li> -->
                             </div>
                         </ul>
                         <ul class="footer__social" id="contacts">
@@ -196,6 +195,70 @@
         </footer>
 
     </div>
+
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-content">
+            <video id="myVideo" playsinline webkit-playsinline>
+                <source src="img/footer/image.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <script>
+document.addEventListener('DOMContentLoaded', () => {
+
+const openVideoLink = document.getElementById('openVideoModalLink');
+const videoModal = document.getElementById('videoModal');
+const videoElement = document.getElementById('myVideo');
+
+if (!openVideoLink || !videoModal || !videoElement) {
+    console.error('Один или несколько необходимых элементов (ссылка, модалка или видео) не найдены в DOM.');
+    return;
+}
+
+function openModal() {
+    videoModal.classList.add('is-visible');
+
+    videoElement.setAttribute('playsinline', '');
+        videoElement.setAttribute('webkit-playsinline', '');
+
+        videoElement.removeAttribute('muted');
+
+        videoElement.load();
+        videoElement.play().catch(error => {
+            console.log('Автоплей видео заблокирован:', error);
+        });
+
+    }
+
+    function closeModal() {
+        videoModal.classList.remove('is-visible');
+
+        videoElement.pause();
+        videoElement.currentTime = 0;
+        videoElement.removeAttribute('autoplay');
+
+    }
+
+    openVideoLink.addEventListener('click', (event) => {
+        event.preventDefault(); 
+        openModal(); 
+    });
+
+    videoModal.addEventListener('click', (event) => {
+        if (event.target === videoModal) {
+            closeModal(); 
+        }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && videoModal.classList.contains('is-visible')) {
+             closeModal();
+        }
+    });
+
+});
+    </script>
 </body>
 
 </html>

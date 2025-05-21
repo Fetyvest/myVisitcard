@@ -52,34 +52,68 @@ a:hover {
     position: absolute;
     top: 0;
     animation: header-dot 120s infinite;
-    animation-timing-function: easy-in-out;
-    transform: translate(50%, -50%);
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes header-dot {
     0% {
-        left: 0;
+        left: -10px;
         top: 0;
+        transform: translate(0, 0);
+        width: 5px;
+        height: 5px;
+    }
+
+    12.5% {
+        width: 15px;
+        height: 5px;
     }
 
     25% {
-        left: 100%;
+        left: calc(100% + 10px);
         top: 0;
+        transform: translate(-100%, 0);
+        width: 5px;
+        height: 5px;
+    }
+
+    37.5% {
+        width: 5px;
+        height: 15px;
     }
 
     50% {
-        left: 100%;
+        left: calc(100% + 10px);
         top: 100%;
+        transform: translate(-100%, -100%);
+        width: 5px;
+        height: 5px;
+    }
+
+    62.5% {
+        width: 15px;
+        height: 5px;
     }
 
     75% {
-        left: 0;
+        left: -10px;
         top: 100%;
+        transform: translate(0, -100%);
+        width: 5px;
+        height: 5px;
+    }
+
+    87.5% {
+        width: 5px;
+        height: 15px;
     }
 
     100% {
-        left: 0;
+        left: -10px;
         top: 0;
+        transform: translate(0, 0);
+        width: 5px;
+        height: 5px;
     }
 }
 
