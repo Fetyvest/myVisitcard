@@ -1,0 +1,111 @@
+.projects__tagsInfo {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    row-gap: 35px;
+    margin-bottom: 20px;
+}
+
+.tagColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.tag {
+    padding: 1px 7px;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: #00000040;
+    font-family: var(--fontRU);
+    font-weight: 500;
+    display: inline-block;
+    margin: 5px;
+}
+
+/* .projects__tagSize {
+} */
+
+.projects__big {
+    border: 5px solid #ff0000;
+    background-color: #ff000040;
+}
+
+.projects__medium {
+    border: 5px solid #ffff00;
+    background-color: #ffff0040;
+}
+
+.projects__small {
+    border: 5px solid #0000ff;
+    background-color: #0000ff40;
+}
+
+/* .projects__tagStatus {
+} */
+
+.projects__develop {
+    border: 5px dashed #00ff00;
+    background-color: #00ff0040;
+}
+
+.projects__useable {
+    border: 5px dashed #ffa500;
+    background-color: #ffa50040;
+}
+
+.projects__archived {
+    border: 5px dashed #1e90ff;
+    background-color: #1e90ff40;
+}
+
+/* .projects__tagPages {
+} */
+
+.projects__onePage {
+    border: 5px dotted #00ffff;
+    background-color: #00ffff40;
+}
+
+.projects__manyPages {
+    border: 5px dotted #dc143c;
+    background-color: #dc143c40;
+}
+
+/* .projects__tagFor {
+} */
+
+.projects__my {
+    border: 5px double #e5ff00;
+    background-color: #e5ff0040;
+}
+
+.projects__study {
+    border: 5px double #d2691e;
+    background-color: #d2691e40;
+}
+
+.projects__order {
+    border: 5px double #800000;
+    background-color: #80000040;
+}
+
+/* .projects__tagLang {
+} */
+
+.projects__htmlAndCss {
+    border: 5px outset #ff7f50;
+    background-color: #ff7f5040;
+}
+
+.projects__javaScript {
+    border: 5px outset #ffd700;
+    background-color: #ffd70040;
+}
+
+.projects__Php {
+    border: 5px outset #483d8b;
+    background-color: #483d8b40;
+}
